@@ -1,0 +1,73 @@
+# Java & Spring Boot
+target/
+*.jar
+*.war
+*.ear
+*.class
+*.log
+*.iml
+out/
+logs/
+!src/main/resources/static/
+!src/main/resources/templates/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.project
+.classpath
+.settings/
+.apt_generated/
+.factorypath/
+
+# Maven
+.mvn/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle/
+build/
+*.gradle.lockfile
+
+# Node.js / React
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
+dist/
+build/
+
+# React Environment Variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# VSCode
+.vscode/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Linting / Testing
+coverage/
+.eslintcache
+jest/
+
+# Docker
+docker-compose.override.yml
