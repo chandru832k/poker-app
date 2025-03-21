@@ -9,3 +9,9 @@ import java.util.List;
 public interface PlayerRepository extends MongoRepository<Player, String> {
     List<Player> findByName(String name);
 }
+
+
+
+
+
+
