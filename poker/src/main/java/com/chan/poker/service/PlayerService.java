@@ -8,20 +8,18 @@ import com.chan.poker.model.Transaction;
 import com.chan.poker.repository.PlayerRepository;
 import com.chan.poker.repository.TransactionRepository;
 
+import lombok.RequiredArgsConstructor;
+
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class PlayerService {
     private final PlayerRepository playerRepository;
     private final TransactionRepository transactionRepository;
-
-    public PlayerService(PlayerRepository playerRepository, TransactionRepository transactionRepository) {
-        this.playerRepository = playerRepository;
-        this.transactionRepository = transactionRepository;
-    }
 
     public List<Player> getAllPlayers() {
         return playerRepository.findAll();
